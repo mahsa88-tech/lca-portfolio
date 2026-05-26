@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Your Name</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f6f7fb;
+      color: #1f2937;
+    }
+    header {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #111827, #4f46e5);
+      color: white;
+    }
+    header h1 { font-size: clamp(2.5rem, 7vw, 5rem); margin-bottom: 1rem; }
+    header p { font-size: 1.25rem; max-width: 680px; margin: 0 auto 2rem; opacity: 0.92; }
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 1.4rem;
+      border-radius: 999px;
+      background: white;
+      color: #111827;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0.4rem;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+      z-index: 10;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a { color: #374151; margin: 0 0.8rem; text-decoration: none; font-weight: 600; }
+    section { max-width: 1050px; margin: auto; padding: 4rem 1.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; color: #111827; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    }
+    .card h3 { margin-bottom: 0.5rem; color: #4f46e5; }
+    .skills span {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      margin: 0.35rem;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111827;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Your Name</h1>
+      <p>Designer, developer, and problem-solver building clean digital experiences. Replace this line with your professional headline.</p>
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a motivated professional with experience in design, development, communication, and creative problem-solving. Use this section to summarize who you are, what you do, and what kind of opportunities you are looking for.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Describe your first project, the tools you used, and the result you achieved.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Describe your second project, what problem it solved, and your role in it.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Describe another strong example of your work, portfolio piece, or achievement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Design</span><span>Communication</span><span>Problem Solving</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>GitHub: github.com/yourusername</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
